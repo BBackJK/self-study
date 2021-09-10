@@ -1,0 +1,86 @@
+.flex-container {
+  border: 2px solid black;
+  background-color: yellow;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  border: 2px solid black;
+  background-color:yellowgreen;
+  margin: 2px;
+}
+
+.grid-container {
+  border: 2px solid black;
+  background-color: yellow;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.grid-item {
+  border: 2px solid black;
+  background-color:tomato;
+  margin: 2px;
+}
+
+
+.trs-container {
+  width: 500px;
+  padding: 20px;
+  border: 5px solid black;
+}
+
+/** classname이 container인 요소의 자식중 div 선택(>)**/
+.trs-container > div {
+  width: 50px; 
+  height: 50px;
+  background-color: yellow;
+  margin: 4px;
+  border: 2px solid red;
+
+
+
+  transition-property: width, background-color;
+  transition-duration: 1s, 0.5s;
+}
+
+/* .box1, .box2 {
+  transition-delay: 0.3s;
+} */
+
+
+.trs-container > div:hover {
+  width: 500px;
+  background-color: yellowgreen;
+}
+
+/* .trs-container > .box1:hover, .trs-container > .box2:hover {
+  transition-delay: 0.3s;
+} */
+
+
+
+.card-container {
+  border: 4px solid yellowgreen;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.card-item {
+  display: inline-block;
+  border: 4px solid yellow;
+  padding: 30px;
+  text-align: center;
+  width: 20%;
+}
+
+
+.row > div {
+  border: 2px solid black;
+}
